@@ -10,3 +10,8 @@ body{
     font-weight: 900;
     font-family: monospace;
 }
+.clock.box{
+    border: 1px solid black;
+    width: 30px;
+    padding: 20px;
+}

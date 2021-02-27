@@ -28,7 +28,7 @@ function showtime(){
     if(s < 10){
         s = "0" + s;
     }
-    var timing = `${h} : ${m} : ${s}`;;
+    var timing = `${h} : ${m} : ${s}`;
     time.innerHTML = timing;
 
 
