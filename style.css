@@ -6,7 +6,7 @@ body{
 }
 
 .clock{
-    font-size: 4rem;
+    font-size: 8vw;
     font-weight: 900;
     font-family: monospace;
 }
@@ -14,4 +14,8 @@ body{
     border: 1px solid black;
     width: 30px;
     padding: 20px;
+}
+.day{
+    text-align: center;
+    font-family: monospace;
 }

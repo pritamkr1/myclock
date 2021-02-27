@@ -1,11 +1,11 @@
 var time = document.querySelector('.clock-container');
 
-
+var day = document.querySelector('.day');
 
 function showtime(){
     var mydate = new Date();
    //time.innerHTML = mydate.toUTCString();
- //time.innerHTML = mydate.toDateString();
+   //time.innerHTML = mydate.toDateString();
     var h = mydate.getHours();
     var m = mydate.getMinutes();
     var s = mydate.getSeconds();
@@ -13,12 +13,10 @@ function showtime(){
     if (h == 0){
         h = 12;
     }
-
     if(h > 12){
         h = h - 12;
         period = "PM";
     }
-
     if(h < 10){
         h = "0" + h;
     }
@@ -30,10 +28,15 @@ function showtime(){
     }
     var timing = `${h} : ${m} : ${s}`;
     time.innerHTML = timing;
-
-
     setTimeout(showtime, 1000);
-
 }
 
 showtime();
+
+function showdate(){
+    var getDate = new Date();
+    getDate = getDate.toDateString();
+    day.innerHTML = getDate;
+}
+
+showdate();
